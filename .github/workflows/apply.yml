@@ -8,6 +8,10 @@ on:
 env:
   AWS_ROLE_ARN: arn:aws:iam::445605964569:role/assume_role_github_actions
   AWS_DEFAULT_REGION: ap-northeast-1
+  
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   deploy:
